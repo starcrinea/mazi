@@ -32,7 +32,7 @@ const simular = async()=>{
 
 try{
 
-const response = await fetch("http://localhost:7071/api/simular",{
+const response = await fetch("/api/simular",{
 
 method:"POST",
 
@@ -82,7 +82,7 @@ if(!resultado) return
 
 try{
 
-await fetch("http://localhost:7071/api/guardar",{
+await fetch("/api/guardar",{
 
 method:"POST",
 
