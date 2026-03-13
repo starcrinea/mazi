@@ -232,7 +232,6 @@ Guardar
 )}
 
 </div>
-
 </div>
 
 )
