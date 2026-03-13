@@ -27,12 +27,15 @@ new Date().toISOString().split("T")[0]
 )
 
 const [resultado,setResultado]=useState<SimulacionResponse | null>(null)
+const API = process.env.NEXT_PUBLIC_API || "/api"
 
 const simular = async()=>{
 
+
+
 try{
 
-const response = await fetch(`${process.env.NEXT_PUBLIC_API}/simular`,{
+const response = await fetch(`${API}/simular`,{
 
 method:"POST",
 
@@ -82,7 +85,7 @@ if(!resultado) return
 
 try{
 
-await fetch(`${process.env.NEXT_PUBLIC_API}/guardar`,{
+await fetch(`${API}/guardar`,{
 
 method:"POST",
 
