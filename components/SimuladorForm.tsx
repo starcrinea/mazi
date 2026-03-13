@@ -32,7 +32,7 @@ const simular = async()=>{
 
 try{
 
-const response = await fetch("/api/simular",{
+const response = await fetch(`${process.env.NEXT_PUBLIC_API}/simular`,{
 
 method:"POST",
 
@@ -82,7 +82,7 @@ if(!resultado) return
 
 try{
 
-await fetch("/api/guardar",{
+await fetch(`${process.env.NEXT_PUBLIC_API}/guardar`,{
 
 method:"POST",
 
